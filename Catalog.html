@@ -30,65 +30,65 @@
         <h2 class="visually-hidden">Фильтр и каталог товаров</h2>
         <div>
           <h3 class="visually-hidden">Фильтры</h3>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-item">
+          <form class="form-filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="catalog-fieldset">
               <legend>Стоимость:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="width: 30%; margin-left: 20%">
+                    <div class="bar">
                     </div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="left: 20%"></div>
-                  <div class="toggle toggle-max" tabindex="0" style="left: 50%"></div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">
+                  <label class="price-controls-label">
                     от <input type="number" name="min-price" value="0">
                   </label>
-                  <label class="max-price">
+                  <label class="price-controls-label">
                     до <input type="number" name="max-price" value="15000">
                   </label>
                 </div>
               </div>
             </fieldset>
-            <fieldset class="filter-item">
+            <fieldset class="catalog-fieldset">
               <legend>Сетка:</legend>
               <ul class="filter-list-radio">
-                <li class="filter-option">
+                <li class="filter-option-item">
                   <input class="filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked >
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-item">
                   <input class="filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed" disabled>
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-item">
                   <input class="filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
                   <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-item">
+            <fieldset class="catalog-fieldset">
               <legend>Особенности:</legend>
               <ul class="filter-list-checkbox">
-                <li class="filter-option">
+                <li class="filter-option-item">
                   <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-item">
                   <input class="filter-input-checkbox" type="checkbox" name="advantages-block" id="filter-advantages-block" disabled>
                   <label for="filter-advantages-block">Блок преимуществ</label>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-item">
                   <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                   <label for="filter-news">Новости</label>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-item">
                   <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                   <label for="filter-gallery">Галерея</label>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option-item">
                   <input class="filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
                   <label for="filter-basket">Корзина</label>
                 </li>
@@ -179,7 +179,7 @@
           </div>
           <div class="pagination">
             <ul class="pagination-list">
-              <li class="pagination-item-current">
+              <li class="pagination-item pagination-item-current">
                 <a>1</a>
               </li>
               <li class="pagination-item">
@@ -188,7 +188,7 @@
               <li class="pagination-item">
                 <a href="#">3</a>
               </li>
-              <li class="pagination-item-last">
+              <li class="pagination-item pagination-item-last">
                 <a href="#">Следующая</a>
               </li>
             </ul>
@@ -220,13 +220,13 @@
         <div class="social-networks-wrap">
           <ul class="social-networks-list">
             <li class="social-networks-item">
-              <a class="social-button" href="#">Вконтакте<svg></svg></a>
+              <a class="social-link" href="#">Вконтакте<svg></svg></a>
             </li>
             <li class="social-networks-item">
-              <a class="social-button" href="#">Фейсбук<svg></svg></a>
+              <a class="social-link" href="#">Фейсбук<svg></svg></a>
             </li>
             <li class="social-networks-item">
-              <a class="social-button" href="#">Инстаграм<svg></svg></a>
+              <a class="social-link" href="#">Инстаграм<svg></svg></a>
             </li>
           </ul>
         </div>
