@@ -58,8 +58,8 @@
                       <div class="bar">
                       </div>
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
                   <div class="price-controls">
                     <label class="price-controls-label">
@@ -71,44 +71,44 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="catalog-fieldset">
+              <fieldset class="catalog-fieldset catalog-fieldset-grid">
                 <legend class="form-title-grid">Сетка:</legend>
                 <ul class="filter-list-radio">
                   <li class="filter-option-item">
-                    <input class="filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked >
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked >
                     <label for="filter-adaptive">Адаптивная</label>
                   </li>
                   <li class="filter-option-item">
-                    <input class="filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed" disabled>
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed" disabled>
                     <label for="filter-fixed">Фиксированная</label>
                   </li>
                   <li class="filter-option-item">
-                    <input class="filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                    <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
                     <label for="filter-rubber">Резиновая</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="catalog-fieldset">
+              <fieldset class="catalog-fieldset catalog-fieldset-features">
                 <legend class="form-title-features">Особенности:</legend>
                 <ul class="filter-list-checkbox">
                   <li class="filter-option-item">
-                    <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                     <label for="filter-slider">Слайдер</label>
                   </li>
                   <li class="filter-option-item">
-                    <input class="filter-input-checkbox" type="checkbox" name="advantages-block" id="filter-advantages-block" disabled>
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="advantages-block" id="filter-advantages-block" disabled>
                     <label for="filter-advantages-block">Блок преимуществ</label>
                   </li>
                   <li class="filter-option-item">
-                    <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                     <label for="filter-news">Новости</label>
                   </li>
                   <li class="filter-option-item">
-                    <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                     <label for="filter-gallery">Галерея</label>
                   </li>
                   <li class="filter-option-item">
-                    <input class="filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                    <input class="visually-hidden filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
                     <label for="filter-basket">Корзина</label>
                   </li>
                 </ul>
@@ -123,12 +123,12 @@
                 <h4 class="form-title-sort">Сортировать:</h4>
               </div>
               <form class="sort-form">
-                <button class="sort-button" type="submit">По цене</button>
-                <button class="sort-button" type="submit">По типу</button>
-                <button class="sort-button" type="submit">По названию</button>
+                <button class="sort-button" type="button">По цене</button>
+                <button class="sort-button" type="button">По типу</button>
+                <button class="sort-button" type="button">По названию</button>
                 <div class="sort-buttons-wrap">
-                  <button class="visually-hidden sort-button" type="submit">Кнопка вниз</button>
-                  <button class="visually-hidden sort-button" type="submit">Кнопка вверх</button>
+                  <button class="sort-button sort-button-down" type="button" aria-label="Кнопка вниз"></button>
+                  <button class="sort-button sort-button-up" type="button" aria-label="Кнопка вверх"></button>
                 </div>
               </form>
             </div>
@@ -146,9 +146,11 @@
                     <img src="img/img-sedona.jpg" width="358" height="578" alt="Sedona">
                   </a>
                   <div class="catalog-item-card">
-                    <span class="catalog-item-title">SEDONA</span>
-                    <p class="catalog-item-desc">Информационный сайт для туристов</p>
-                    <button class="button button-price" type="submit">9 900 ₽</button>
+                    <div class="catalog-item-card-wrap">
+                      <span class="catalog-item-title">SEDONA</span>
+                      <p class="catalog-item-desc">Информационный сайт<br> для туристов</p>
+                      <button class="button button-price" type="submit">9 900 ₽</button>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-item">
@@ -163,9 +165,11 @@
                     <img src="img/img-pink.jpg" width="358" height="578" alt="PINK">
                   </a>
                   <div class="catalog-item-card">
-                    <span class="catalog-item-title">PINK APP</span>
-                    <p class="catalog-item-desc">Продуктовый лендинг приложения для iOS и Android</p>
-                    <button class="button button-price" type="submit">9 900 ₽</button>
+                    <div class="catalog-item-card-wrap">
+                      <span class="catalog-item-title">PINK APP</span>
+                      <p class="catalog-item-desc">Продуктовый лендинг приложения для iOS и Android</p>
+                      <button class="button button-price" type="submit">9 900 ₽</button>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-item">
@@ -180,9 +184,11 @@
                     <img src="img/img-barbershop.jpg" width="358" height="578" alt="Borodinski">
                   </a>
                   <div class="catalog-item-card">
-                    <span class="catalog-item-title">Borodinski</span>
-                    <p class="catalog-item-desc">Барбершоп для сымых крутых и модных</p>
-                    <button class="button button-price" type="submit">9 900 ₽</button>
+                    <div class="catalog-item-card-wrap">
+                      <span class="catalog-item-title">Borodinski</span>
+                      <p class="catalog-item-desc">Барбершоп для сымых крутых и модных</p>
+                      <button class="button button-price" type="submit">9 900 ₽</button>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-item">
@@ -197,9 +203,11 @@
                     <img src="img/img-mishka.jpg" width="358" height="578" alt="Mishka">
                   </a>
                   <div class="catalog-item-card">
-                    <span class="catalog-item-title">Mishka</span>
-                    <p class="catalog-item-desc">Подарки и сувениры ручной работы для дома</p>
-                    <button class="button button-price" type="submit">9 900 ₽</button>
+                    <div class="catalog-item-card-wrap">
+                      <span class="catalog-item-title">Mishka</span>
+                      <p class="catalog-item-desc">Подарки и сувениры ручной работы для дома</p>
+                      <button class="button button-price" type="submit">9 900 ₽</button>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-item">
@@ -214,9 +222,11 @@
                     <img src="img/img-aplus.jpg" width="358" height="578" alt="Aplus">
                   </a>
                   <div class="catalog-item-card">
-                    <span class="catalog-item-title">Aplus</span>
-                    <p class="catalog-item-desc">Увлекательное онлайн обучение для Всех</p>
-                    <button class="button button-price" type="submit">9 900 ₽</button>
+                    <div class="catalog-item-card-wrap">
+                      <span class="catalog-item-title">Aplus</span>
+                      <p class="catalog-item-desc">Увлекательное онлайн обучение для Всех</p>
+                      <button class="button button-price" type="submit">9 900 ₽</button>
+                    </div>
                   </div>
                 </li>
                 <li class="catalog-item">
@@ -231,9 +241,11 @@
                     <img src="img/img-kvast.jpg" width="358" height="578" alt="Кваст">
                   </a>
                   <div class="catalog-item-card">
-                    <span class="catalog-item-title">Кваст</span>
-                    <p class="catalog-item-desc">Вкусный и приятный крафтовый квас</p>
-                    <button class="button button-price" type="submit">9 900 Р</button>
+                    <div class="catalog-item-card-wrap">
+                      <span class="catalog-item-title">Кваст</span>
+                      <p class="catalog-item-desc">Вкусный и приятный крафтовый квас</p>
+                      <button class="button button-price" type="submit">9 900 Р</button>
+                    </div>
                   </div>
                 </li>
               </ul>
