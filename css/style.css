@@ -769,7 +769,7 @@ a {
 
 .footer {
   position: relative;
-  margin-bottom: 76px;
+  margin: 0 0 76px 0;
 }
 
 .footer iframe {
@@ -860,12 +860,12 @@ a {
   height: 190px;
 }
 .social-networks {
-  position: relative;
-  top: 123px;
   display: grid;
   grid-template-columns: 261px 1fr;
   column-gap: 139px;
   align-items: center;
+  margin-top: 122px;
+  margin-bottom: 76px;
   margin-left: 10px;
 }
 
