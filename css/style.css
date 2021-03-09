@@ -335,6 +335,7 @@ a {
   display: inline-block;
   margin: 0;
   padding: 17px 54px 15px 54px;
+  vertical-align: middle;
 }
 
 .button-learn-more {
@@ -451,6 +452,7 @@ a {
   display: inline-block;
   margin: 0;
   padding: 17px 40px 15px 39px;
+  vertical-align: middle;
 }
 
 .button-order-red {
@@ -511,7 +513,7 @@ a {
   bottom: -70px;
   width: 100%;
   height: 2px;
-  background-image:  url("../img/Rectangle-1.svg");
+  background-image:  url("../img/rectangle-1.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -611,7 +613,7 @@ a {
   left: -34px;
   width: 25px;
   height: 2px;
-  background-image:  url("../img/Rectangle-2.svg");
+  background-image:  url("../img/rectangle-2.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -688,7 +690,7 @@ a {
   bottom: -34px;
   width: 100%;
   height: 2px;
-  background-image:  url("../img/Rectangle-1.svg");
+  background-image:  url("../img/rectangle-1.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -737,6 +739,7 @@ a {
 
 .companies-logo {
   display: inline-block;
+  vertical-align: middle;
 }
 
 
@@ -815,6 +818,7 @@ a {
   top: 1px;
   left: 9px;
   display: inline-block;
+  vertical-align: middle;
   width: auto;
   padding: 49px 39px 42px 50px;
   background-color: var(--basic-white);
@@ -844,6 +848,7 @@ a {
 .footer-phone {
   display: inline-block;
   margin: 18px 0 0 0;
+  vertical-align: middle;
 }
 
 .button-write-us {
@@ -852,6 +857,7 @@ a {
   display: inline-block;
   margin: 38px 0 0 0;
   padding: 17px 44px 15px 45px;
+  vertical-align: middle;
 }
 
 .button-write-us {
@@ -973,6 +979,7 @@ a {
   width: 760px;
   margin: 0;
   padding: 63px 99px 84px 100px;
+  vertical-align: middle;
   background-color: var(--basic-white);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
@@ -1065,6 +1072,7 @@ a {
 .letter-form-text textarea{
   display: inline-block;
   margin: 0;
+  vertical-align: baseline;
   width: 760px;
   height: 118px;
 }
@@ -1099,6 +1107,7 @@ a {
   display: inline-block;
   margin: 0;
   padding: 17px 83px 15px 83px;
+  vertical-align: middle;
   background-color: var(--basic-red-a);
 }
 
@@ -1441,6 +1450,7 @@ a {
   display: inline-block;
   margin: 48px 0 0 0;
   padding: 17px 89px 15px 88px;
+  vertical-align: middle;
   font-weight: 500;
   line-height: 18px;
   color: var(--basic-black);
@@ -1699,6 +1709,7 @@ a {
   display: inline-block;
   margin: 0 0 44px 0;
   padding: 17px 72px 15px 72px;
+  vertical-align: middle;
 }
 
 .button-price {
@@ -1731,6 +1742,7 @@ a {
   display: inline-block;
   margin-right: 11px;
   padding: 17px 21px 15px 22px;
+  vertical-align: middle;
   background-color: var(--basic-light-gray-a);
   border-radius: 3px;
 }
