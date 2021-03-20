@@ -1,4 +1,4 @@
-const letterLink = document.querySelector(".letter-link");
+const letterButton = document.querySelector(".button-write-us");
 const letterPopup = document.querySelector(".modal-window");
 const letterClose = letterPopup.querySelector(".modal-close");
 const letterForm = letterPopup.querySelector(".letter-form");
@@ -14,9 +14,9 @@ try {
   isStorageSupport = false;
 }
 
-letterLink.addEventListener("click", function (evt) {
+letterButton.addEventListener("click", function (evt) {
   evt.preventDefault();
-  letterPopup.classList.add(".modal-show");
+  letterPopup.classList.add("modal-show");
 
   if (storage) {
     letterName.value = storage;
@@ -28,7 +28,7 @@ letterLink.addEventListener("click", function (evt) {
 
 letterClose.addEventListener("click", function (evt) {
   evt.preventDefault();
-  letterPopup.classList.remove(".modal-show");
+  letterPopup.classList.remove("modal-show");
 })
 
 letterForm.addEventListener("submit", function (evt) {
@@ -53,3 +53,5 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
