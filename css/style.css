@@ -746,7 +746,6 @@ a {
   vertical-align: middle;
 }
 
-
 .companies-logo svg {
   fill: var(--basic-black);
   fill-opacity: 0.2;
@@ -1028,7 +1027,7 @@ a {
   height: 21px;
   border: none;
   background-color: var(--basic-white);
-  background-image:  url("../img/shape-close.svg");
+  background-image:  url("../img/button-close.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   opacity: 0.3;
@@ -1037,14 +1036,14 @@ a {
 }
 
 .modal-close:hover {
-  background-image:  url("../img/shape-close.svg");
+  background-image:  url("../img/button-close.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   opacity: 1;
 }
 
 .modal-close:active {
-  background-image:  url("../img/shape-close.svg");
+  background-image:  url("../img/button-close.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
   opacity: 0.1;
